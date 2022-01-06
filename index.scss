@@ -1,0 +1,326 @@
+//defalt style
+* {
+  margin: 0;
+}
+body {
+  background-color: #c0c0c0;
+  display: flex;
+  height: 97vh;
+
+  align-items: center;
+  justify-content: center;
+  .app {
+    height: 90%;
+    width: 30%;
+    background-color: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .screen {
+      width: 100%;
+      height: 17%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .textviewer {
+        font-size: 2em;
+        height: 90%;
+        outline: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 96%;
+      }
+    }
+
+    .buttonContainer {
+      width: 99%;
+      height: 82.6%;
+      background-color: #2f4f4f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .buttons {
+        width: 100%;
+        height: 80%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        .button {
+          align-items: center;
+          background-color: white;
+          border-radius: 20px;
+          cursor: grab;
+          display: flex;
+          font-size: 1.6em;
+          font-weight: 540;
+          height: 50px;
+          justify-content: center;
+          transition: all 0.1s ease;
+          width: 50px;
+          &:hover {
+            background-color: #cfcfcf;
+            font-size: 1.2em;
+          }
+        }
+        #operators {
+          background-color: #708090;
+          color: white;
+          &:hover {
+            background-color: #657380;
+          }
+        }
+      }
+
+      .correctionKeys {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 87%;
+        height: 10%;
+        #cbutton {
+          align-items: center;
+          border-radius: 12px;
+          cursor: grab;
+          display: flex;
+          font-size: 1.6em;
+          justify-content: center;
+          background-color: rgb(22, 22, 22);
+          color: rgb(214, 214, 214);
+          height: 50px;
+          width: 80px;
+          transition: all 0.1s ease;
+
+          &:hover {
+            background-color: rgb(17, 17, 17);
+            font-size: 1.2em;
+          }
+        }
+
+        #dbutton {
+          align-items: center;
+          border-radius: 20px;
+          cursor: grab;
+          display: flex;
+          font-size: 1.6em;
+          justify-content: center;
+          background-color: rgb(43, 26, 26);
+          color: rgb(214, 214, 214);
+          height: 50px;
+          width: 50px;
+          transition: all 0.1s ease;
+          &:hover {
+            background-color: rgb(36, 21, 21);
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+//all mobile view type of screen
+@media only screen and (max-width: 1050px) and (orientation: portrait) {
+  body {
+    background-color: #ffffff;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    .app {
+      width: 100%;
+      height: 100%;
+      background-color: #0c0c0c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .screen {
+        width: 100%;
+        height: 17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .textviewer {
+          font-size: 2em;
+          height: 90%;
+          outline: none;
+          padding-left: 5px;
+          padding-right: 5px;
+          width: 96%;
+        }
+      }
+
+      .buttonContainer {
+        width: 99%;
+        height: 82.6%;
+        background-color: #2f4f4f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .buttons {
+          width: 100%;
+          height: 80%;
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          align-items: center;
+          justify-items: center;
+          .button {
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+            cursor: grab;
+            display: flex;
+            font-size: 1.6em;
+            font-weight: 540;
+            height: 50%;
+            justify-content: center;
+            transition: all 0.1s ease;
+            width: 60%;
+
+            &:hover {
+              background-color: #cfcfcf;
+              font-size: 1.2em;
+            }
+          }
+          #operators {
+            background-color: #708090;
+            color: white;
+            &:hover {
+              background-color: #657380;
+            }
+          }
+        }
+
+        .correctionKeys {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 89%;
+          height: 10%;
+          #cbutton {
+            align-items: center;
+            border-radius: 12px;
+            cursor: grab;
+            display: flex;
+            font-size: 1.6em;
+            justify-content: center;
+            background-color: rgb(22, 22, 22);
+            color: rgb(214, 214, 214);
+            height: 100%;
+            width: 25%;
+            transition: all 0.1s ease;
+
+            &:hover {
+              background-color: rgb(17, 17, 17);
+              font-size: 1.2em;
+            }
+          }
+
+          #dbutton {
+            align-items: center;
+            border-radius: 20px;
+            cursor: grab;
+            display: flex;
+            font-size: 1.6em;
+            justify-content: center;
+            background-color: rgb(43, 26, 26);
+            color: rgb(214, 214, 214);
+            height: 100%;
+            width: 18%;
+            transition: all 0.1s ease;
+            &:hover {
+              background-color: rgb(36, 21, 21);
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//iphone x screen
+@media only screen and (max-width: 380px) and (min-height: 800px) and (orientation: portrait) {
+  body {
+    .app {
+      .buttonContainer {
+        .buttons {
+          .button {
+            height: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+//galaxy fold
+@media only screen and (max-width: 280px) and (min-height: 600px) and (orientation: portrait) {
+  body {
+    .app {
+      .buttonContainer {
+        .buttons {
+          .button {
+            height: 40%;
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+//ipad screen
+@media only screen and (min-width: 500px) and (min-height: 700px) and (orientation: portrait) {
+  body {
+    .app {
+      .screen {
+        .textviewer {
+          font-size: 3.7em;
+          height: 90%;
+          outline: none;
+          padding-left: 5px;
+          padding-right: 5px;
+          width: 96%;
+        }
+      }
+      .buttonContainer {
+        .buttons {
+          .button {
+            width: 45%;
+            font-size: 2.7em;
+            font-weight: 549;
+
+            &:hover {
+              font-size: 2.2em;
+            }
+          }
+        }
+        .correctionKeys {
+          #cbutton {
+            font-size: 2.7em;
+
+            &:hover {
+              font-size: 2.2em;
+            }
+          }
+
+          #dbutton {
+            font-size: 2.7em;
+
+            &:hover {
+              font-size: 2.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

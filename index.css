@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #c0c0c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 97vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .app {
+  height: 90%;
+  width: 30%;
+  background-color: #0c0c0c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .app .screen {
+  width: 100%;
+  height: 17%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .app .screen .textviewer {
+  font-size: 2em;
+  height: 90%;
+  outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 96%;
+}
+
+body .app .buttonContainer {
+  width: 99%;
+  height: 82.6%;
+  background-color: #2f4f4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .app .buttonContainer .buttons {
+  width: 100%;
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+body .app .buttonContainer .buttons .button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6em;
+  font-weight: 540;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  width: 50px;
+}
+
+body .app .buttonContainer .buttons .button:hover {
+  background-color: #cfcfcf;
+  font-size: 1.2em;
+}
+
+body .app .buttonContainer .buttons #operators {
+  background-color: #708090;
+  color: white;
+}
+
+body .app .buttonContainer .buttons #operators:hover {
+  background-color: #657380;
+}
+
+body .app .buttonContainer .correctionKeys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 87%;
+  height: 10%;
+}
+
+body .app .buttonContainer .correctionKeys #cbutton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #161616;
+  color: #d6d6d6;
+  height: 50px;
+  width: 80px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+body .app .buttonContainer .correctionKeys #cbutton:hover {
+  background-color: #111111;
+  font-size: 1.2em;
+}
+
+body .app .buttonContainer .correctionKeys #dbutton {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2b1a1a;
+  color: #d6d6d6;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+body .app .buttonContainer .correctionKeys #dbutton:hover {
+  background-color: #241515;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1050px) and (orientation: portrait) {
+  body {
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    overflow: hidden;
+  }
+  body .app {
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .app .screen {
+    width: 100%;
+    height: 17%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .app .screen .textviewer {
+    font-size: 2em;
+    height: 90%;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 96%;
+  }
+  body .app .buttonContainer {
+    width: 99%;
+    height: 82.6%;
+    background-color: #2f4f4f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .app .buttonContainer .buttons {
+    width: 100%;
+    height: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body .app .buttonContainer .buttons .button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.6em;
+    font-weight: 540;
+    height: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    width: 60%;
+  }
+  body .app .buttonContainer .buttons .button:hover {
+    background-color: #cfcfcf;
+    font-size: 1.2em;
+  }
+  body .app .buttonContainer .buttons #operators {
+    background-color: #708090;
+    color: white;
+  }
+  body .app .buttonContainer .buttons #operators:hover {
+    background-color: #657380;
+  }
+  body .app .buttonContainer .correctionKeys {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 89%;
+    height: 10%;
+  }
+  body .app .buttonContainer .correctionKeys #cbutton {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 12px;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.6em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #161616;
+    color: #d6d6d6;
+    height: 100%;
+    width: 25%;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+  }
+  body .app .buttonContainer .correctionKeys #cbutton:hover {
+    background-color: #111111;
+    font-size: 1.2em;
+  }
+  body .app .buttonContainer .correctionKeys #dbutton {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.6em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #2b1a1a;
+    color: #d6d6d6;
+    height: 100%;
+    width: 18%;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+  }
+  body .app .buttonContainer .correctionKeys #dbutton:hover {
+    background-color: #241515;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 380px) and (min-height: 800px) and (orientation: portrait) {
+  body .app .buttonContainer .buttons .button {
+    height: 40%;
+  }
+}
+
+@media only screen and (max-width: 280px) and (min-height: 600px) and (orientation: portrait) {
+  body .app .buttonContainer .buttons .button {
+    height: 40%;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (min-height: 700px) and (orientation: portrait) {
+  body .app .screen .textviewer {
+    font-size: 3.7em;
+    height: 90%;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 96%;
+  }
+  body .app .buttonContainer .buttons .button {
+    width: 45%;
+    font-size: 2.7em;
+    font-weight: 549;
+  }
+  body .app .buttonContainer .buttons .button:hover {
+    font-size: 2.2em;
+  }
+  body .app .buttonContainer .correctionKeys #cbutton {
+    font-size: 2.7em;
+  }
+  body .app .buttonContainer .correctionKeys #cbutton:hover {
+    font-size: 2.2em;
+  }
+  body .app .buttonContainer .correctionKeys #dbutton {
+    font-size: 2.7em;
+  }
+  body .app .buttonContainer .correctionKeys #dbutton:hover {
+    font-size: 2.2em;
+  }
+}
+/*# sourceMappingURL=index.css.map */
